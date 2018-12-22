@@ -69,6 +69,7 @@
 
 
 
+
     </style>
 </head>
 <body>
@@ -83,16 +84,21 @@
             <a href="#">Link 3</a>
         </div>
     </div>
-    {% if main_menus %}
-    {% for menu in main_menus %}
+    {% if menus %}
+    {% for menu in menus %}
     <div class="dropdown">
         <button class="dropbtn">
             {{menu}}
             <i class="fa fa-caret-down"></i>
         </button>
+        <div class="dropdown-content">
+
+        </div>
     </div>
     {% endfor %}
     {% endif %}
+
+
 </div>
 </body>
 </html>
